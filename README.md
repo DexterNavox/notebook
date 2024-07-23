@@ -39,7 +39,7 @@ O projeto está estruturado da seguinte forma:
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/usuario/repo.git
+    git clone github.com/DexterNavox/notebook.git
     ```
 
 2. Navegue até o diretório do projeto:
