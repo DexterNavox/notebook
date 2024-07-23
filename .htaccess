@@ -1,0 +1,46 @@
+# Ativa o módulo de reescrita se estiver disponível
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+</IfModule>
+
+# Configura a página a ser exibida quando ocorre um erro 403 (Acesso Proibido)
+ErrorDocument 403 localhost/notebook/index
+
+
+# Configura a página a ser exibida quando ocorre um erro 404 (Página não encontrada)
+ErrorDocument 404 localhost/notebook/error404
+
+# Ativa o mecanismo de reescrita
+RewriteEngine On
+
+# Remover a extensão .php dos URLs se o arquivo .php existir
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Desativa a capacidade de listar o conteúdo de diretórios quando nenhum arquivo de índice está presente
+Options -Indexes
+
+# Verifica se o arquivo solicitado não é um arquivo físico
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Verifica se o arquivo solicitado não é um diretório
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redireciona URLs como editar_notebooks-123 para editar_notebooks.php?id=123
+RewriteRule ^editar_notebooks-([0-9]+)$ editar_notebooks.php?id=$1
+
+# Redireciona URLs como editar_sites-123 para editar_sites.php?id=123
+RewriteRule ^editar_sites-([0-9]+)$ editar_sites.php?id=$1
+
+# Redireciona URLs como editar_status-123 para editar_status.php?id=123
+RewriteRule ^editar_status-([0-9]+)$ editar_status.php?id=$1
+
+# Redireciona URLs como editar_nivel-123 para editar_nivel.php?id=123
+RewriteRule ^editar_nivel-([0-9]+)$ editar_nivel.php?id=$1
+
+# Redireciona URLs como Visualizar-123 para Visualizar.php?id=123
+RewriteRule ^Visualizar-([0-9]+)$ Visualizar.php?id=$1
+
+# Redireciona URLs como deletar_notebooks-123 para deletar_notebooks.php?id=123
+RewriteRule ^deletar_notebooks-([0-9]+)$ deletar_notebooks.php?id=$1

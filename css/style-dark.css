@@ -1,0 +1,52 @@
+/* Cor de fundo escura */
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Botões */
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger,
+.btn-light,
+.btn-dark,
+.btn-link {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-success,
+.btn-outline-info,
+.btn-outline-warning,
+.btn-outline-danger,
+.btn-outline-light,
+.btn-outline-dark {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Cabeçalho da página */
+h4 {
+    color: #fff;
+}
+
+/* Caixa de pesquisa */
+.input-group-text {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.form-control:focus {
+    border-color: #fff;
+    box-shadow: none;
+}
+
+
+

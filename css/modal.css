@@ -1,0 +1,35 @@
+.custom-modal-dialog {
+    /* Defina os estilos específicos para o diálogo do modal aqui */
+    max-width: 80%;
+}
+
+
+.custom-modal-dialog {
+    /* Defina os estilos específicos para o diálogo do modal aqui */
+    margin: 0 auto;
+}
+
+.modal-backdrop {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vh;
+    height: 100vh;
+    background-color: #000;
+}
+
+.padding-home {
+    margin-top: -14px;
+    margin-left: 24%;
+}
+
+.custom-modal-dialog-lg {
+    max-width: 90%;
+    /* Defina a largura desejada */
+}
+.modal-content.custom-modal-content {
+   
+    width: 28%;
+    
+}

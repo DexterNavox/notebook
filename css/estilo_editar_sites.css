@@ -1,0 +1,38 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    width: 500px;
+}
+
+label {
+    color: #fff;
+}
+
+.form-control {
+    background-color: #fff;
+    color: #212529;
+    border: none;
+}
+
+#botao {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.container {
+    max-width: 659px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+label {
+    display: flex;
+    margin-bottom: .5rem;
+}
